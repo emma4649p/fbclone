@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import fblogo from '../public/social-facebook-circle-512.webp'
+import imgUser from '../public/user.png'
 import { BellIcon, ChatIcon, ChevronDownIcon, HomeIcon, UserGroupIcon, ViewGridIcon } from '@heroicons/react/solid'
 import { FlagIcon, PlayIcon, SearchIcon, ShoppingCartIcon } from '@heroicons/react/outline'
 import HeaderIcon from './HeaderIcon'
@@ -27,8 +28,8 @@ function Header() {
         </div>
       </div>
       <div className='flex items-center sm:space-x-2 justify-end'>
-        <Image className='rounded-full cursor-pointer' src={session.user.image} onClick={signOut} width={40} height={40} layout='fixed' />
-        <p className='whitespace-nowrap font-semibold pr-3'>{session.user.name}</p>
+        <Image className='rounded-full cursor-pointer' src={session.user.image?session.user.image:imgUser} onClick={signOut} width={40} height={40} layout='fixed' />
+        <p className='whitespace-nowrap font-semibold pr-3'>{session.user.name?session.user.name:'-'}</p>
         <ViewGridIcon className='icon' />
         <ChatIcon className='icon' />
         <BellIcon className='icon' />
