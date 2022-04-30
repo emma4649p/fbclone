@@ -9,7 +9,11 @@ module.exports = (phase, { defaultConfig }) => {
   console.log(phase);
   const url = "/fbclone";
   const Img = {
-    domains: ["res.cloudinary.com", "avatars.githubusercontent.com"],
+    domains: [
+      "res.cloudinary.com",
+      "avatars.githubusercontent.com",
+      "i.scdn.co"
+    ],
   }
 
   if (phase === PHASE_DEVELOPMENT_SERVER) {
