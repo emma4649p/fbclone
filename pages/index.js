@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Login from '../components/Login'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
+import Feed from '../components/Feed'
 import { getSession, useSession } from 'next-auth/react'
 
 // https://next-auth.js.org/tutorials/securing-pages-and-api-routes
@@ -11,16 +12,16 @@ export default function Home() {
 
   if (!session) return <Login />;
   return (
-    <div>
+    <div className='h-screen bg-gray-100 overflow-hidden'>
       <Head>
         <title>fbclone</title>
         <meta name="description" content="fbclone" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main className='flex'>
         <Sidebar />
-
+        <Feed />
       </main>
 
     </div>
