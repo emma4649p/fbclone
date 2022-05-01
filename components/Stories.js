@@ -26,16 +26,16 @@ const stories = [
     src: "/stories/lorenzo-moschi-XG391m6rH_8-unsplash.jpg",
     profile: "/profiles/kimson-doan-HD8KlyWRYYM-unsplash.jpg"
   },
-  {
-    name: "marin",
-    src: "/stories/madhu-shesharam-KQZZCVyEWVk-unsplash.jpg",
-    profile: "/profiles/marin-tulard-QdD8NwVjlGU-unsplash.jpg"
-  },
-  {
-    name: "michael",
-    src: "/stories/siyuan-hu-Jea4t6pte-k-unsplash.jpg",
-    profile: "/profiles/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
-  },
+  // {
+  //   name: "marin",
+  //   src: "/stories/madhu-shesharam-KQZZCVyEWVk-unsplash.jpg",
+  //   profile: "/profiles/marin-tulard-QdD8NwVjlGU-unsplash.jpg"
+  // },
+  // {
+  //   name: "michael",
+  //   src: "/stories/siyuan-hu-Jea4t6pte-k-unsplash.jpg",
+  //   profile: "/profiles/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+  // },
 ]
 
 function Stories() {
