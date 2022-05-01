@@ -2,7 +2,7 @@ import Stories from './Stories'
 
 function Feed() {
   return (
-    <div>
+    <div className='flex-grow h-screen pb-4 pt-6'>
       <div>
         <Stories />
         {/* InputBox */}
