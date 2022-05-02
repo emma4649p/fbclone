@@ -1,8 +1,9 @@
 import { initializeApp, getApps, getApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { getFirestore } from 'firebase/firestore';
 import { getStorage } from "firebase/storage";
 
 // https://firebase.google.com/docs/web/setup
+// https://firebase.google.com/docs/reference/js/firestore_.md#@firebase/firestore
 
 const firebaseConfig = {
   apiKey: "AIzaSyC9AyNYJcNhAA1uTSN-v2bI32QwzRWws8s",
