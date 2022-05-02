@@ -28,7 +28,7 @@ function Header() {
         </div>
       </div>
       <div className='flex items-center sm:space-x-2 justify-end'>
-        <Image className='rounded-full cursor-pointer' src={session.user.image?session.user.image:imgUser} onClick={signOut} width={40} height={40} layout='fixed' />
+        <Image className='rounded-full cursor-pointer' src={session.user.image?session.user.image:imgUser} onClick={signOut} width={40} height={40} layout='fixed' alt='user' />
         <p className='whitespace-nowrap font-semibold pr-3'>{session.user.name?session.user.name:'-'}</p>
         <ViewGridIcon className='icon' />
         <ChatIcon className='icon' />
