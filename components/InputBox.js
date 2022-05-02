@@ -13,7 +13,10 @@ function InputBox() {
     e.preventDefault();
     if (!inputRef.current.value) return;
     db.collection('posts').add({
-
+      message: inputRef.current.value,
+      name: session.user.name,
+      email: session.user.email,
+      image: session.user.image,
     });
   };
 

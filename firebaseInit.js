@@ -1,8 +1,9 @@
 import { initializeApp, getApps, getApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-import 'firebase/storage';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { getStorage } from "firebase/storage";
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// https://firebase.google.com/docs/web/setup
+
 const firebaseConfig = {
   apiKey: "AIzaSyC9AyNYJcNhAA1uTSN-v2bI32QwzRWws8s",
   authDomain: "liz-f-b-clone.firebaseapp.com",
@@ -15,7 +16,6 @@ const firebaseConfig = {
 
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 const db = getFirestore(app);
-
-const storage = firebase.storage();
+const storage = getStorage(app);
 
 export { db, storage }
