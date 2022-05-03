@@ -5,6 +5,7 @@ import { getStorage } from "firebase/storage";
 // https://firebase.google.com/docs/web/setup
 // https://firebase.google.com/docs/reference/js/firestore_.md#@firebase/firestore
 
+// this firebase config from liz
 const firebaseConfig = {
   apiKey: "AIzaSyC9AyNYJcNhAA1uTSN-v2bI32QwzRWws8s",
   authDomain: "liz-f-b-clone.firebaseapp.com",
